@@ -1,0 +1,89 @@
+
+/*================== Goolge Fonts ====================*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+/*================== CSS VARIABLE ====================*/
+:root {
+   --header-height: 3rem;
+   /*================== Colors ===================*/
+   /*Color mode HSL (hue, saturation, lightness)*/
+   --hue: 0;
+   --sat: 0%;
+   --title-color: hsl(var(--hue), var(--sat), 20%);
+   --title-color-dark: hsl(var(--hue), var(--sat), 0%);
+   --text-color: hsl(var(--hue), var(--sat), 46%);
+   --body-color: hsl(var(--hue), var(--sat), 98%);
+   --container-color:#fff;
+
+   /*================== Font Weight ====================*/
+   --body-family: 'Poppins', sans-serif;
+
+   /*================== Margins ====================*/
+
+   /*================== z Index ====================*/
+}
+
+/*================== Base ====================*/
+* {
+   margin: 0;
+   padding: 0;
+}
+html {
+   scroll-behavior: smooth;
+   transition: .3s;
+}
+body,
+button,
+input {
+   font-family: var(--body-family);
+}
+body{
+   background-color: var(--body-color);
+   color: var(--text-color);
+ }
+
+
+/*================== Reusable clases ====================*/
+
+/*================== Layouts ====================*/
+.container {
+   max-width: 1150px;
+   margin-left: auto;
+   margin-right: auto;
+ }
+ .grid {
+   display: grid;
+   gap: 1.5rem;
+ }
+
+/*================== Media Querys ====================*/
+@media screen and (max-width: 992px) {
+   :root {
+     --big-font-size: 2.75rem;
+     --h1-font-size: 1.5rem;
+     --h2-font-size: 1.25rem;
+     --h3-font-size: 1rem;
+     --normal-font-size: 0.938rem;
+     --small-font-size: 0.812rem;
+     --smaller-font-size: 0.75rem;
+   }
+ }
+ /* =========== Large Devises =========== */
+ @media screen and (max-width: 992px){
+   
+ }
+ @media screen and (max-width: 768px){
+     
+ }
+ @media screen and (max-width: 576px){
+   
+ }
+ @media screen and (max-width: 350px){
+   :root { 
+     --big-font-size: 2.25rem;
+   }
+   .container {
+     margin-left: var(--mb-1);
+     margin-right: var(--mb-1);
+   }
+ }

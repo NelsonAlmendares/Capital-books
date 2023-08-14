@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Quattrocento+Sans:wght@400;700&display=swap');
+
+.home-container {
+    background: #EDF5FB;
+    height: calc(100vh - 0.1rem);
+}
+.main-text {
+    font-size: 3rem;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 0;
+}
+.second-text {
+    font-weight: 100;
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 25px;
+}
+p {
+    font-size: 1.1   rem;
+    font-family: 'Montserrat', sans-serif;
+}
+.main-container {
+    padding-top: 15rem;
+}
+.home-img {
+    width: auto !important;
+    height: 380px;
+}
+button.explore-button {
+    background: #52A3E2;
+    color: white;
+    padding: 0.8rem;
+    width: 230px;
+    font-size: 1.5rem;
+    margin-top: 3rem;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+    transition: .3s;
+}
+button.explore-button:hover {
+    background-color: #B1D5F1;
+}
+button.explore-button:hover:active {
+    background-color: #8BC1EB;
+}
+
+/* ================  Media Querys ================ */
+@media screen and (max-width: 992px) {
+    .home-img {
+        height: 300px;
+    }
+    .main-text {
+        font-size: 2.7rem;
+    }
+    .second-text {
+        font-size: 1.8rem;
+    }
+}
+ 
+@media screen and (max-width: 768px) {
+    .main-container {
+        padding-top: 10rem;
+    }
+    .home-container {
+        height: calc(100vh - 2rem);
+    }
+    .main-text {
+        font-size: 2.2rem;
+    }
+    .second-text {
+        font-size: 1.6rem;
+    }
+    .home-img {
+        width: auto !important;
+        height: 300px;
+    }
+    .explore {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    button.explore-button {
+        margin-top: 1rem;
+        padding: 0.5rem;
+        width: 180px;
+        margin-bottom: 1rem;
+    }
+}
+ 
+@media screen and (max-width: 576px) {
+    .main-container {
+        padding-top: 5rem;
+    }
+    .home-container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .home-img {
+        width: auto !important;
+        height: 250px;
+        padding-bottom: 1.5rem;
+    }
+    button.explore-button {
+        margin-top: 0.6rem;
+        padding: 0.rem;
+        width: 170px;
+        margin-bottom: 1.2rem;
+    }
+}
+ 
+@media screen and (max-width: 350px) {}

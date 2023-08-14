@@ -1,0 +1,116 @@
+.logo {
+    height: 65px;
+    filter: brightness(999%);
+}
+.logo-img {
+    filter: grayscale(1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+.footer {
+    background-color: #313131;
+    padding-bottom: 1rem;
+    padding-top: 3rem;
+}
+.contents {
+    display: flex;
+}
+.content1, .content2, .content3, .content4 {
+    flex: 3;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 3rem;
+    flex-direction: column;
+    padding-left: 5rem;
+}
+
+.list-container {
+    list-style: none;
+    padding-left: 0;
+}
+.list-item {
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 100;
+    padding-top: 0.3rem;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+    padding-left: 0;
+}
+.list-item:hover {
+    color: #B1D5F1;
+}
+
+.copyright {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #B1D5F1;
+    margin-bottom: 15px;
+    font-size: 1rem;
+}
+.title {
+    color: #52A3E2;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+/* ================  Media Querys ================ */
+@media screen and (max-width: 992px) {
+    .footer {
+        padding-bottom: 7rem;
+    }
+    .content1, .content2, .content3, .content4 {
+        flex: 3;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-bottom: 3rem;
+        flex-direction: column;
+        padding-left: 2rem;
+    }
+}
+ 
+@media screen and (max-width: 768px) {
+    .contents {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .content1, .content2, .content3, .content4 {
+        flex: 3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 1rem;
+        padding-left: 0;
+    }
+    .list-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 0;
+    }
+    .logo-img {
+        margin-bottom: 0.5rem;
+    }
+    .footer {
+        padding-bottom: 1rem;
+        padding-top: 1.5rem;
+    }
+    .title {
+        margin-bottom: 0;
+    }
+    .last-container {
+        margin-bottom: 2.5rem;
+    }
+    .logo {
+        height: 55px;
+    }
+}
+ 
+@media screen and (max-width: 576px) {}
+ 
+@media screen and (max-width: 350px) {}

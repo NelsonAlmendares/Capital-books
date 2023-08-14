@@ -1,0 +1,215 @@
+.header {
+   background: #EDF5FB;
+   padding-top: 1rem;
+   padding-bottom: 1rem;
+   z-index: 100;
+   margin-top: 2rem;
+   width: 100%;
+}
+/* LOGO */
+.logo_img {
+   height: 50px;
+   width: auto;
+   -webkit-filter: grayscale(1);
+   filter: grayscale(1);
+}
+
+.nav-list {
+   margin-top: 0.8rem;
+   list-style: none;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   font-family: Arial, Helvetica, sans-serif;
+   padding-left: 0;
+}
+.navItem {
+   list-style: none;
+   cursor: pointer;
+}
+.navItem:hover {
+   color: #52A3E2;
+}
+.active {
+   font-weight: bold;
+}
+.active:hover {
+   color: black;
+}
+/* ================  Search Bar ================ */
+.box {
+   display: flex;
+   justify-content: flex-end;
+   align-items: flex-end;
+}
+.container-1{
+   overflow: hidden;
+   width: 300px;
+   vertical-align: middle;
+   white-space: nowrap;
+}
+.container-1 input#search {
+   width: 300px;
+   height: 45px;
+   background: #F9FAFC;
+   border: none;
+   font-size: 10pt;
+   float: left;
+   color: #000;
+   padding-left: 25px;
+   -webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+   border-radius: 5px;
+}
+input:focus {
+   outline: none;
+}
+.container-1 input#search::-webkit-input-placeholder {
+   color: #65737e;
+}
+.container-1 input#search:-moz-placeholder { /* Firefox 18- */
+   color: #65737e;  
+}
+.container-1 input#search::-moz-placeholder {  /* Firefox 19+ */
+   color: #65737e;  
+}
+.container-1 input#search:-ms-input-placeholder {  
+   color: #65737e;  
+}
+.container-1 button.icon{
+   -webkit-border-top-right-radius: 5px;
+   -webkit-border-bottom-right-radius: 5px;
+   -moz-border-radius-topright: 5px;
+   -moz-border-radius-bottomright: 5px;
+   border-top-right-radius: 5px;
+   border-bottom-right-radius: 5px;
+   border: none;
+   background: #CBE3F5;
+   height: 45px;
+   width: 45px;
+   color: #4f5b66;
+   opacity: 0;
+   font-size: 10pt;
+   -webkit-transition: all .55s ease;
+   -moz-transition: all .55s ease;
+   -ms-transition: all .55s ease;
+   -o-transition: all .55s ease;
+   transition: all .55s ease;
+}
+.container-1:hover button.icon, .container-1:active button.icon, .container-1:focus button.icon {
+   outline: none;
+   opacity: 1;
+   margin-left: -45px;
+}
+ .container-1:hover button.icon:hover{
+   background: #52A3E2;
+}
+.nav__icon,
+.nav__toggle,
+.btn__close {
+   display: none;
+}
+.logo_min {
+   display: none;
+}
+.bx {
+   font-size: 1.3rem;
+}
+
+/* ================  Media Querys ================ */
+@media screen and (max-width: 992px) {
+   .header {
+      top: initial;
+      bottom: 0;
+      position: fixed;
+      margin-top: 0;
+   }
+   .logo_min {
+      display: block;
+      height: 45px;
+   }
+   .sub_menu {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   }
+   #logo {
+      display: none;
+   }
+   .nav__menu {
+      position: fixed;
+      bottom: -100%;
+      left: 0;
+      width: 100%;
+      background-color: #fff;
+      padding: 2rem 0.1rem 4rem;
+      box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
+      border-radius: 1.5rem 1.5rem 0 0;
+      transition: .3s ease-in-out;
+   }
+   .show-menu {
+      bottom: 0;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+   }
+   .nav__icon,
+   .nav__toggle,
+   .btn__close {
+      display: block;
+   }
+   .btn__close {
+      margin-top: 8px;
+      margin-right: 8px;
+      font-size: 1.5rem;
+   }
+   .logo {
+      display: flex;
+   }
+   .content {
+      display: flex;
+      padding: 1.5rem;
+   }
+   .container-1:hover button.icon, 
+   .container-1:active button.icon, 
+   .container-1:focus button.icon {
+      margin-left: -46px;
+   }
+   .container-1 input#search {
+      background-color: #EDEFF3;
+   }
+}
+
+@media screen and (max-width: 768px) {
+   .content {
+      display: grid;
+      justify-content: center;
+   }
+   .listItems {
+      width: 500px;
+      margin: 0;
+   }
+   .btn__close {
+      position: relative;
+   }
+   .btn__close {
+      display: flex;
+      justify-content: flex-end;
+   }
+   .box {
+      align-items: center;
+      justify-content: center;
+   }
+}
+
+@media screen and (max-width: 576px) {
+   .listItems {
+      width: 370px;
+   }
+   .logo_min {
+      display: block;
+      height: 40px;
+   }
+}
+
+@media screen and (max-width: 350px) {}

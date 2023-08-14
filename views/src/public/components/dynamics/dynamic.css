@@ -1,0 +1,104 @@
+.content {
+    background: #f1f1f1;
+}
+.title-dynamic {
+    padding-top: 3rem;
+    font-weight: 700;
+    font-size: 28px;
+    color: #606060;
+}
+.dynamic-card {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+.title-cards {
+    font-weight: 600;
+    font-size: 36px;
+    color: #232323;
+    margin-top: 4.5rem;
+}
+
+/* Cards */
+#card-container {
+    background-color: #fff;
+    border-radius: 8px;
+    position: relative;
+    margin-top: 60px;
+    margin-bottom: 50px;
+}
+.bookIcon {
+    transform: translateX(315px);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.text-content {
+    box-sizing: content-box;
+}
+.img-carousel {
+    position: absolute;
+    z-index: 1000;
+    transform: translate(-8%, -20%);
+}
+
+/* ================  Media Querys ================ */
+@media screen and (max-width: 1360px) {
+    .bookIcon {
+        transform: translateX(266px);
+    }
+    .img-carousel {
+        transform: translate(-13%, -17%);
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .img-carousel {
+        width: 250px;
+        transform: translate(-15%, -7%);
+    }
+}
+
+@media screen and (max-width: 992px) {
+    #card-container {
+        display: grid;
+    }
+    .contents-cards {
+        display: flex;
+        flex-direction: column;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .img-carousel {
+        position: relative;
+        padding-left: 0;
+        transform: translate(1%, -7%);
+    }
+    #icon {
+        display: none;
+    }
+    .dynamic-card {
+        padding-top: 0.5rem;
+        padding-bottom: 1rem;
+    }
+    #card-container {
+        border-radius: 8px;
+        
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+}
+ 
+@media screen and (max-width: 768px) {
+    .title-cards {
+        font-weight: 600;
+        font-size: 34px;
+        color: #232323;
+        margin-top: 2.5rem;
+    }
+}
+ 
+@media screen and (max-width: 576px) {
+    .carousel-content {
+        display: none;
+    }
+}
+ 
+@media screen and (max-width: 350px) {}

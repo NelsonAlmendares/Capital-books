@@ -1,0 +1,42 @@
+.publicity-container {
+    margin-top: 5rem;
+}
+
+.publicity-title {
+    color: #606060;
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+
+/* Carousel */
+.carousel-content {
+    padding-bottom: 6rem;
+    width: 100%;
+}
+.carousel-container {
+    margin-top: 2.5rem;
+}
+.carousel {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center center;
+}
+
+/* ================  Media Querys ================ */
+@media screen and (max-width: 992px) {}
+ 
+@media screen and (max-width: 768px) {}
+ 
+@media screen and (max-width: 576px) {
+    .publicity-title {
+        margin-left: 1rem;
+        font-size: 1.4rem;
+    }
+    .carousel-content {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+ 
+@media screen and (max-width: 350px) {}
